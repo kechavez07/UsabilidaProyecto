@@ -1,0 +1,91 @@
+.registrar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 0 2rem;
+    width: 350px;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(205, 230,240, 0.45);
+    gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .registrar {
+        width: 90%; /* Reducir el ancho del formulario para dispositivos móviles */
+        height: auto; /* Ajustar la altura automáticamente según el contenido */
+    }
+
+    .registrarCabesera > span {
+        font-size: 30px; /* Reducir el tamaño de fuente del título para dispositivos móviles */
+    }
+
+    .registrarList > li {
+        font-size: 20px; /* Reducir el tamaño de fuente de los elementos de lista para dispositivos móviles */
+    }
+
+    .registrarList > input {
+        height: 40px; /* Aumentar la altura del campo de entrada para mejorar la usabilidad en dispositivos móviles */
+    }
+
+    .registrarBoton > button {
+        font-size: 14px; /* Reducir el tamaño de fuente del botón para dispositivos móviles */
+    }
+}
+
+.registrarCabesera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.registrarCabesera > img{
+    height: 100px;
+    width: 120px;
+}
+
+.registrarCabesera > span{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.registrarList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registrarList > li {
+    display: flex;
+    font-size: 30px;
+}
+
+.registrarList > input{
+    height: 30px;
+    border-radius: 8px;
+    padding-left: 1rem;
+}
+
+.registrarBoton {
+    display: flex;
+    justify-content: center;
+}
+
+.registrarBoton > button{
+    background-color: #e45d28; 
+    color: white; 
+    padding: 10px;
+    border: none; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 15px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
