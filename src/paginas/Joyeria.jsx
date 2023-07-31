@@ -27,7 +27,7 @@ const Joyeria = () => {
                    <Card  key={productItem.id} description={productItem.description} image={productItem.image} price={productItem.price} title={productItem.title}/> 
                ))
            }
-       </div>
+            </div>
         </div>
         
     );
