@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import Card from './Card';
 import axios from 'axios';
-
+import NavBar from '../componets/navBar'
+import Filter from '../componets/Filter'
 
 
 const Producto = () => {
@@ -18,7 +19,6 @@ const Producto = () => {
     }
 
     return (
-        
         <div className='producto'>
             
             {

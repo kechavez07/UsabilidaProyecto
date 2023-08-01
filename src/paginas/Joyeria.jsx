@@ -20,13 +20,11 @@ const Joyeria = () => {
         <div>
             <NavBar/>
             <Filter/>
-            <div className='producto'>
-           
-           {
+            <div className='producto'>{
                joyeria.map((productItem)=>(
                    <Card  key={productItem.id} description={productItem.description} image={productItem.image} price={productItem.price} title={productItem.title}/> 
                ))
-           }
+                }
             </div>
         </div>
         

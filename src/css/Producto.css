@@ -9,20 +9,26 @@
     position: relative;
   }
   
-  @media screen and (max-width: 768px) {
-    .card {
+    /* .card {
       width: 100%; /* Reducir el ancho de las tarjetas para dispositivos más pequeños */
-      height: 250px; /* Ajustar la altura para dispositivos más pequeños */
-    }
+      /* height: 250px; /* Ajustar la altura para dispositivos más pequeños */
+   /* }  */
   
-    .ProducImg > img {
+    /* .ProducImg > img {
       width: 50px; /* Reducir el tamaño de la imagen para dispositivos más pequeños */
-    }
+   /* }  */
   
     .producto {
       gap: 1.5rem; /* Reducir el espacio entre las tarjetas para dispositivos más pequeños */
+      padding: 2.5rem 1rem;
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-between;
     }
-  }
+
   
   .pieImg{
     padding: 1rem;
@@ -71,14 +77,4 @@
     right: 10px;
     top: 145px;
     font-size: 20px;
-  }
-  .producto{
-    padding: 2.5rem 1rem;
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem;
-    align-content: space-between;
   }

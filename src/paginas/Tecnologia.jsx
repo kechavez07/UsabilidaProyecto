@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../componets/Card';
 import axios from 'axios';
-
+import NavBar from '../componets/navBar'
+import Filter from '../componets/Filter'
 
 const Tecnologia = () => {
     const[tecnologia,setTecnologia]=useState([])
@@ -16,13 +17,18 @@ const Tecnologia = () => {
     }
 
     return (
-        <div className='producto'>
+        <div>
+            <NavBar/>
+            <Filter/>
+            <div className='producto'>
             {
                 tecnologia.map((productItem)=>(
                     <Card  key={productItem.id} description={productItem.description} image={productItem.image} price={productItem.price} title={productItem.title}/> 
                 ))
             }
+            </div>
         </div>
+        
     );
 };
 
