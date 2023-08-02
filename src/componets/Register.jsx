@@ -3,6 +3,18 @@ import Filter from '../componets/Filter'
 
 
 const Register = () => {
+    
+    // axios.post('https://mi-servidor.com/api/endpoint', { data: 'Mi información' })
+    // .then(response => {
+    // console.log(response);
+    // })
+    // .catch(error => {
+    // console.log(error);
+    // });
+     
+    const email = document.getElementById("correoElectronico")
+    console.log(email)
+
     return (
         <div>
             <NavBar/>
@@ -16,7 +28,7 @@ const Register = () => {
                     <li>
                         Email
                     </li>
-                    <input type="email" placeholder='Ingrese su email' />
+                    <input type="email" id ="correoElectronico" placeholder='Ingrese su email' />
                     <li>
                         Usuario
                     </li>

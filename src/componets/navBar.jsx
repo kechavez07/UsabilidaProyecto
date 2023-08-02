@@ -14,10 +14,10 @@ const NavBar = () => {
                     <input type="text" placeholder='Buscar'/>
                     <i className="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <Link className="loginAndCart" to={'/login'}>
-                    <i className="fa-sharp fa-solid fa-cart-shopping"></i>
-                    <i className="fa-regular fa-user" ></i>
-                </Link>
+                <div className="loginAndCart" >
+                    <Link className="fa-sharp fa-solid fa-cart-shopping" to={'/cartShop'}></Link>
+                    <Link className="fa-regular fa-user" to={'/login'} ></Link>
+                </div>
             </div>
         </div>
     );

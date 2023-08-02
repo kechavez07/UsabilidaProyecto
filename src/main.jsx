@@ -10,6 +10,7 @@ import Tecnologia from "./paginas/Tecnologia";
 import Joyeria from "./paginas/Joyeria";
 import RopaHombres from "./paginas/RopaHombre";
 import RopaMujer from "./paginas/RopaMujer";
+import CartShop from "./componets/CartShop.jsx";
 
 const router = createHashRouter([
   {
@@ -44,6 +45,10 @@ const router = createHashRouter([
     path: "/ropaMujer",
     element: <RopaMujer />,
   },
+  {
+    path:"/cartShop",
+    element:<CartShop/>
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
